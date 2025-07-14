@@ -1,106 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>About Us</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
 
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="home.html">
+            <img src="images.jpeg" alt="Thamsec Logo" width="40" height="40" class="me-2"/>
+            <span>THAMAGA JUNIOR SECONDARY SCHOOL</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+                <li class="nav-item"><a class="nav-link" href="discover.html">Discover</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-        <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white boarder-bottom">
-            <div class="container">
-                <a class="navbar-brand fw-bold" href="images.jpeg" THAMAGA JUNIOR SECONDARY SCHOOL>
-                    <img src="images.jpeg" alt="Thamsec Logo" width="40" height="40" class="me-2">
-                    <span class="fw-bold">THAMAGA JUNIOR SECONDARY SCHOOL</span>
-                </a>        
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
-                        <li class="nav-item"><a class="nav-link" href="discover.html">Discover</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <!-- Bootstrap CSS CDN -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- External CSS -->
-        <link rel="stylesheet" href="styles.css">
-        </head>
-        <body>
-
-        <section class="about-us-section py-5">
-            <div class="container">
-            <div class="row g-4">
-                <!-- Objectives -->
-                <div class="col-md-6">
+<!-- About Us Section -->
+<section class="about-us-section py-5">
+    <div class="container">
+            <!-- School Prospectus -->
+            <div class="col-md-6">
                 <div class="card h-100 shadow-sm">
                     <div class="card-body">
-                    <h2 class="card-title text-primary">Our Objectives</h2>
-                    <p class="card-text">
-                        Our aim is to nurture academic excellence, encourage creative thinking,
-                        and foster a lifelong love for learning. We strive to create a
-                        supportive and inclusive environment where students grow into responsible,
-                        confident, and capable individuals.
-                    </p>
-                    </div>
-                </div>
-                </div>
-
-                <!-- School Prospectus -->
-                <div class="col-md-6">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                    <h2 class="card-title text-success">School Prospectus</h2>
-                    <p class="card-text">
-                        The school prospectus outlines our curriculum, teaching methodology,
-                        extracurricular activities, facilities, and admissions process. It serves
-                        as a guide for parents and students to understand what makes our school
-                        a great place to learn and thrive.
-                    </p>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
-        </section>
-
-        <!--Footer-->
-        <footer class="bg-dark text-white pt-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 mb-3">
-                        <h5>Contact Us</h5>
-                        <p>Email: thamagajss@gmail.com</p>
-                        <p>Tel: +267 5999221/579</p>
-                        <p>Fax: +267 5999267</p>
-                        <p>Private Bag 002, Thamaga</p>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <h5>Address</h5>
-                        <p>Thamaga Junior Secondary School</p>
-                        <p> Plot, Thamaga, Botswana</p>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <h5>Follow Us</h5>
-                        <a href="https://www.facebook.com/profile.php?id=100057305505959&mibextid=ZbWKwL" class="text-white me-3">Facebook</a>
-                    </div>
-                    <div class="text-center py-3 border-top">
-                        <p class="mb-0">© 2025 Thamaga Junior Secondary School| All rights reserved</p>
+                        <h2 class="card-title text-success">School Prospectus</h2>
+                        <p class="card-text">
+                            <h3>THE HISTORY OF THE SCHOOL</h3><br>
+                            Thamaga Junior Secondary School (J.S.S) is a Government school, and it is named after the village Thamaga where it is located, in the Kweneng District.
+                            <br>The school was originally built as a primary school in 1978 and it was called Thamagane Primary School. The name later changed to Thamaga JSS after been taken over by the central government in 1984 with the view of accommodating PSLE pupils who could not find places in form 1. The School was upgraded in 1987 and new buildings such as laboratories for Science, Home Economics and Design and Technology were added to the existing ones. A library and an Administration block were also built at this time.
+                            <br>In 1996 further extension work was carried out. The school kitchen, dining hall, multipurpose room (pavilion) for Design and Technology, computer room and art room were constructed.
+                        </p><br>
+                        <p>
+                            <h3>THE EMBLEM</h3><br>
+                            It is said that great minerals are sometimes found in apparently poor soils while intelligence is sometimes hidden in ordinary looking faces, we are a school that is known to the outside world, a pearl hidden somewhere in a village named Thamaga. Through determination and courage of the students of this school, we are going to see ourselves through. Our main theme behind our emblem is the Setswana saying: “Moremogolo go betlwa wa taola wa motho o a ipetla”, which clearly means that every individual is responsible for paving his/her destiny.
+                            <br>The road to such destiny is illuminated by a candle to clearly illustrate to the people that education will lead them to a better future. In striving for the future we have our tools to work with, symbolized by a book, mathematical compass and a pen.
+                            <br>Not only are we arming the students with academic knowledge, but also with life skills and positive attitude through extra-curricular activities. A football and a softball bat, to illustrate clearly that physical fitness of the students is also enhanced. Physical fitness builds up wellness.
+                            <br>To sum up everything, we have in the centre of the emblem, the symbol of a hill which the village is named after: “Thamaga”. The dormant hill may soon erupt, who knows? Some good agricultural areas were once covered with lava. We are also about to erupt, to leave behind newcomers to put another brick on the wall for the development of the nation.
+                        </p>
+                        <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#schoolProspectusMore">
+                            Read More
+                        </button>
+                        <div class="collapse mt-3" id="schoolProspectusMore">
+                           <p><h3> DISCIPLINE</h3>
+                            This item exists primarily to guide students to conduct themselves in a manner that will keep conflicts to the bare minimum. This greatly contribute towards setting an ideal atmosphere that will make Thamaga JSS a safe and enjoyable school. Upon admission, it is assumed that a student has agreed to uphold the good name of the school and therefore, undertakes to abide by the school rules and regulations. It is therefore the duty of each parent to fully acquaint themselves with the relevant provisions and bring these to the attention of their child. Ignorance of the provisions and other education statutes governing the smooth operation of the institution will be in serious breach of the contract between us. The school authorities in consultation with the Ministry of Education & Skills Development reserve the right to reprimand, punish, suspend or expel a student whose conduct is deemed prejudicial to the maintenance of order and discipline.<br>
+                            Only parents and guardian who have signed admission forms of children registered with the school can ask for permission/collect reports for their students.
+                            <br>The school shall require identification in a form of Omang/Passport/driver’s license from any parent/guardian.
+                            <br>Any entry/exit through ungazetted point shall attract punishment.<br>
+                            <br>Students are not to be found in possession of sharp pointed or dangerous objects at any given time e.g. knives, pair of scissors, bats e.t.c
+                           </p>
+                           <p><h3>COMMON OFFENCES AND CLASSIFICATION</h3>
+                                <h5>CLASS 4 OFFENCES</h5>
+                                These are common minor offences, which School Head and Teachers should deal with through counseling, reprimand, manual work and or corporal punishment.
+                                <h5>CLASS 3 OFFENCES</h5>
+                                These offences are more serious than Class 4 offences and may warrant suspension from school in accordance with Education Act CAP 58:01.
+                                <h5>CLASS 2 OFFENCES</h5>
+                                These are cases of a gravely reprehensible nature for which stern action must be applied to maintain proper standards of discipline in schools. They warrant suspension pending expulsion in accordance with Regulations 28,29 and 30 of the Education Act CAP 58:01 (Government and Aided Secondary School) Regulations. Repeated offences in class 3 and 4 may attract discipline measure under this class.
+                                <h5>CLASS 1 OFFENCES</h5>
+                                These are offences of a nature, which contravenes the panel code and as such warrant the involvement of the law enforcement agencies, e.g abortion, murder, sexual assault, smuggling etc.
+                           </p>
+                            <!-- Results Table -->
+                            <div class="table-responsive">
+                                <table class="table table-hover" id="offence-table">
+                                    <thead class="table-dark">
+                                    <tr>
+                                        <th>OFFENCE</th>
+                                        <th>CLASS</th>
+                                        <th id="action-header" class="text-end d-none">Actions</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </div>
+</section>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
-    </body>
+<!-- Footer -->
+<footer class="bg-dark text-white pt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <h5>Contact Us</h5>
+                <p>Email: thamagajss@gmail.com</p>
+                <p>Tel: +267 5999221 / 579</p>
+                <p>Fax: +267 5999267</p>
+                <p>Private Bag 002, Thamaga</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5>Address</h5>
+                <p>Thamaga Junior Secondary School</p>
+                <p>Plot, Thamaga, Botswana</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5>Follow Us</h5>
+                <a href="https://www.facebook.com/profile.php?id=100057305505959&mibextid=ZbWKwL" class="text-white me-3">Facebook</a>
+            </div>
+        </div>
+        <div class="text-center py-3 border-top">
+            <p class="mb-0">© 2025 Thamaga Junior Secondary School | All rights reserved</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const tableBody = document.querySelector("offence tbody");
+
+  for (let i = 1; i <= 29; i++) {
+    const row = document.createElement("tr");
+
+    const cell1 = document.createElement("td");
+    cell1.textContent = `Row ${i} Col 1`;
+
+    const cell2 = document.createElement("td");
+    cell2.textContent = `Row ${i} Col 2`;
+    row.appendChild(cell1);
+    row.appendChild(cell2);
+    tableBody.appendChild(row);
+  }
+</script>
+</body>
 </html>

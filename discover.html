@@ -1,188 +1,474 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Discover Our School</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover Our School</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-        <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white boarder-bottom">
-            <div class="container">
-                <a class="navbar-brand fw-bold" href="images.jpeg" THAMAGA JUNIOR SECONDARY SCHOOL>
-                    <img src="images.jpeg" alt="Thamsec Logo" width="40" height="40" class="me-2">
-                    <span class="fw-bold">THAMAGA JUNIOR SECONDARY SCHOOL</span>
-                </a>        
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
-                        <li class="nav-item"><a class="nav-link" href="discover.html">Discover</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="home.html">
+            <img src="images.jpeg" alt="Thamsec Logo" width="40" height="40" class="me-2" />
+            <span class="fw-bold">THAMAGA JUNIOR SECONDARY SCHOOL</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+                <li class="nav-item"><a class="nav-link active" href="discover.html">Discover</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-        <!-- Bootstrap CSS -->
-        <div class="container py-5">
+<!-- Page Content -->
+<div class="container py-5">
 
-            <!-- Mission & Vision -->
-            <section class="mb-5">
-            <h2 class="text-primary">Mission & Vision</h2>
-            <div class="bg-light p-4 rounded shadow-sm">
-                <p><strong>Mission:</strong> To provide quality education...</p>
-                <p><strong>Vision:</strong> To be a leader in innovation and inclusiveness...</p>
-            </div>
-            </section>
+    <!-- Mission & Vision -->
+    <section id="mission-vision" class="mb-5">
+        <h2 class="text-primary">Mission & Vision</h2>
+        <div class="bg-light p-4 rounded shadow-sm">
+            <p><strong>Mission:</strong> We provide students with necessary skills, knowledge and positive aattitudes through the creation of a resourceful, productive and conductive environment.</p>
+            <p><strong>Vision:</strong> Educated and globally competitive Batswana.</p>
+            <p><strong>Values:</strong> Botho, Thuto, Honesty, Excellence, Transparency, Accountability, Customer focus, Perseverance, collaboration</p>
+        </div>
+    </section>
 
-            <!-- Departments -->
-            <section class="mb-5">
-            <h2 class="text-success">Departments</h2>
-            <div class="bg-white p-4 rounded shadow-sm mb-2">
-                <p>Explore our academic departments that promote excellence in education.</p>
-                <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#departmentsMore">
+    <!-- Departments -->
+    <section id="departments" class="mb-5">
+        <h2 class="text-success">Departments</h2>
+        <div class="bg-white p-4 rounded shadow-sm mb-2">
+            <p>Explore our academic departments that promote excellence in education.</p>
+            <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#departmentsMore">
                 Read More
-                </button>
-
-                <div class="collapse mt-3" id="departmentsMore">
+            </button>
+            <div class="collapse mt-3" id="departmentsMore">
                 <div class="row g-3">
-                    <div class="col-md-4">
-                    <div class="border p-3 h-100 rounded">Science Department</div>
-                    </div>
-                    <div class="col-md-4">
-                    <div class="border p-3 h-100 rounded">Arts Department</div>
-                    </div>
-                    <div class="col-md-4">
-                    <div class="border p-3 h-100 rounded">Commerce Department</div>
-                    </div>
-                    <div class="col-md-4">
-                    <div class="border p-3 h-100 rounded">Agriculture Department</div>
-                    </div>
-                    <div class="col-md-4">
-                    <div class="border p-3 h-100 rounded">Sports Department</div>
-                    </div>
-                    <div class="col-md-4">
-                    <div class="border p-3 h-100 rounded">Languages Department</div>
-                    </div>
-                </div>
+                    <div class="col-sm-6 col-md-4"><div class="border p-3 rounded h-100">Science Department<p></p></div></div>
+                    <div class="col-sm-6 col-md-4"><div class="border p-3 rounded h-100">Arts Department</div></div>
+                    <div class="col-sm-6 col-md-4"><div class="border p-3 rounded h-100">Commerce Department</div></div>
+                    <div class="col-sm-6 col-md-4"><div class="border p-3 rounded h-100">Agriculture Department</div></div>
+                    <div class="col-sm-6 col-md-4"><div class="border p-3 rounded h-100">Sports Department</div></div>
+                    <div class="col-sm-6 col-md-4"><div class="border p-3 rounded h-100">Languages Department</div></div>
                 </div>
             </div>
-            </section>
+        </div>
+    </section>
 
-            <!-- Events -->
-            <section class="mb-5">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <h2 class="text-info">Upcoming Events</h2>
-                <a href="#" class="text-decoration-none">View More</a>
-            </div>
-            <div class="row g-4">
-                <!-- Loop or duplicate this block to add more events manually -->
-                <!-- 11 example event cards -->
-                <!-- Each has a carousel for images/videos -->
-                <!-- Use image placeholders or replace with real links -->
-                <!-- You can add more by duplicating the column -->
-                <!-- Each has a title under it -->
-                <!-- Bootstrap carousel inside card -->
-                <!-- Responsive and mobile-friendly -->
-                <!-- Slide items can be images or videos -->
-
-                <!-- Loop for 11 Events -->
-                <!-- Example 1 -->
-                <div class="col-md-6 col-lg-4">
+    <!-- Events -->
+    <section id="events" class="mb-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="text-info">Upcoming Events</h2>
+            <a href="#" class="text-decoration-none">View More</a>
+        </div>
+        <div id="event-placeholder" class="text-center text-muted py-3">No upcoming events at the moment.</div>
+        <div class="row g-4" id="event-cards-container">
+            <!-- Event cards to be dynamically inserted -->
+            <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm">
                     <div id="eventCarousel1" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                        <img src="https://via.placeholder.com/300x200?text=Event+1" class="d-block w-100" alt="Event 1">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="wellness.jpg" class="d-block w-100" alt="Wellness Day '25" />
+                            </div>
+                             <div class="carousel-item active">
+                                <img src="welness.jpg" class="d-block w-100" alt="Wellness Day '25" />
+                            </div>
+                             <div class="carousel-item active">
+                                <img src="wellness (2).jpg" class="d-block w-100" alt="Wellness Day '25" />
+                            </div>
+                             <div class="carousel-item active">
+                                <img src="nmg.jpg" class="d-block w-100" alt="Wellness Day '25" />
+                            </div>
+                             <div class="carousel-item active">
+                                <img src="fnb.jpg" class="d-block w-100" alt="Wellness Day '25" />
+                            </div>
+                             <div class="carousel-item active">
+                                <img src="fnb (2).jpg" class="d-block w-100" alt="Wellness Day '25" />
+                            </div>
+                             <div class="carousel-item active">
+                                <img src="fnb (3).jpg" class="d-block w-100" alt="Wellness Day '25" />
+                            </div>
+                             <div class="carousel-item active">
+                                <img src="fnb (4).jpg" class="d-block w-100" alt="Wellness Day '25" />
+                            </div>
+                             <div class="carousel-item active">
+                                <img src="fnb (5).jpg" class="d-block w-100" alt="Wellness Day '25" />
+                            </div>
+                            
+                            <div class="carousel-item">
+                                <video class="d-block w-100" controls>
+                                    <source src="sample-video.mp4" type="video/mp4" />
+                                    Your browser does not support video playback.
+                                </video>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                        <video class="d-block w-100" controls>
-                            <source src="sample-video.mp4" type="video/mp4">
-                            Your browser does not support video playback.
-                        </video>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel1" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel1" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel1" data-bs-slide="prev" aria-label="Previous">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel1" data-bs-slide="next" aria-label="Next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
                     </div>
                     <div class="card-body">
-                    <h5 class="card-title">Sports Day 2025</h5>
+                        <h5 class="card-title">Wellness Day '25</h5>
+                        <p class="text-muted">📅 Date: April 11, 2025</p>
+                        <p>Theme:Healthy today, secure tomorrow; Planning for a stress free retirement.</p>
                     </div>
                 </div>
-                </div>
-
-                <!-- Repeat this block for more events (up to 11 or more) -->
-                <!-- Just change IDs, image sources, and titles accordingly -->
-
-                <!-- ... repeat 10 more event cards ... -->
-                
             </div>
-            </section>
 
-            <!-- Vacancies -->
-            <section class="mb-5">
-            <h2 class="text-danger">Vacancies</h2>
-            <div class="bg-white p-4 rounded shadow-sm">
-                <!-- Admin adds content manually below -->
-                <div class="vacancy-item mb-3">
-                <h5>Mathematics Teacher</h5>
-                <p>We are looking for a passionate math teacher. Apply before August 15, 2025.</p>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div id="eventCarousel1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="prize.jpg" class="d-block w-100" alt="prize giving" />
+                            </div>
+                             <div class="carousel-item active">
+                                <img src="prize (2).jpg" class="d-block w-100" alt="prize giving" />
+                            </div>
+                             <div class="carousel-item active">
+                                <img src="prize (3).jpg" class="d-block w-100" alt="prize giving" />
+                            </div>
+                             <div class="carousel-item active">
+                                <img src="prize (4).jpg" class="d-block w-100" alt="prize giving" />s
+                            </div>
+                             <div class="carousel-item active">
+                                <img src="prize (5).jpg" class="d-block w-100" alt="prize giving" />
+                            </div>
+                             <div class="carousel-item active">
+                                <img src="prize (6).jpg" class="d-block w-100" alt="prize giving" />
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel1" data-bs-slide="prev" aria-label="Previous">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel1" data-bs-slide="next" aria-label="Next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Prize giving ceremony</h5>
+                        <p class="text-muted">📅 Date: Feb 02, 2024</p>
+                        <p>Awarding the best perfomer per subject- Form 1's and Form 2's.</p>
+                    </div>
                 </div>
-                <div class="vacancy-item mb-3">
+            </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div id="eventCarousel1" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="june.jpg" class="d-block w-100" alt="june 16" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="june (2).jpg" class="d-block w-100" alt="june 16" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="june (3).jpg" class="d-block w-100" alt="june 16" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel1" data-bs-slide="prev" aria-label="Previous">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel1" data-bs-slide="next" aria-label="Next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">June 16</h5>
+                            <p class="text-muted">📅 Date: June 16, 2025</p>
+                            <p>Theme:Healthy today, secure tomorrow; Planning for a stress free retirement.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div id="eventCarousel1" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="bea.jpg" class="d-block w-100" alt="peagetry" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="bea (2).jpg" class="d-block w-100" alt="peagetry" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="bea (3).jpg" class="d-block w-100" alt="peagetry" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel1" data-bs-slide="prev" aria-label="Previous">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel1" data-bs-slide="next" aria-label="Next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Thamsec Beauty contest </h5>
+                            <p class="text-muted">📅 Date: April 11, 2025</p>
+                            <p>Crowning Miss Thamaga JSS 2023.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div id="eventCarousel1" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="odc.jpg" class="d-block w-100" alt="odc" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="odc (2).jpg" class="d-block w-100" alt="odc" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="odc (3).jpg" class="d-block w-100" alt="odc" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel1" data-bs-slide="prev" aria-label="Previous">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel1" data-bs-slide="next" aria-label="Next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Okavango Diamond Company</h5>
+                            <p class="text-muted">📅 Date: Feb 02, 2024</p>
+                            <p>the Okavango Diamond Company donates duplicanting machines wortyh P90 000.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div id="eventCarousel1" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="oly.jpg" class="d-block w-100" alt="oly" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="oly (2).jpg" class="d-block w-100" alt="oly" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="oly (3).jpg" class="d-block w-100" alt="oly" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="oly (4).jpg" class="d-block w-100" alt="oly" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="oly (5).jpg" class="d-block w-100" alt="oly" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="oly (6).jpg" class="d-block w-100" alt="oly" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="oly (7).jpg" class="d-block w-100" alt="oly5" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="oly (8).jpg" class="d-block w-100" alt="oly" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="oly (9).jpg" class="d-block w-100" alt="oly" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="oly (10).jpg" class="d-block w-100" alt="oly" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="oly (11).jpg" class="d-block w-100" alt="oly" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="oly (12).jpg" class="d-block w-100" alt="oly" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="oly (13).jpg" class="d-block w-100" alt="oly" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="oly (14).jpg" class="d-block w-100" alt="oly" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="oly (15).jpg" class="d-block w-100" alt="oly" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="oly (16).jpg" class="d-block w-100" alt="oly" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="oly (17).jpg" class="d-block w-100" alt="oly" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="oly (18).jpg" class="d-block w-100" alt="oly" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="oly (19).jpg" class="d-block w-100" alt="oly" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="oly (20).jpg" class="d-block w-100" alt="oly" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="oly (21).jpg" class="d-block w-100" alt="oly" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="oly (22).jpg" class="d-block w-100" alt="oly" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="oly (23).jpg" class="d-block w-100" alt="oly" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="oly (24).jpg" class="d-block w-100" alt="oly" />
+                                </div> 
+                                <div class="carousel-item active">
+                                    <img src="oly (25).jpg" class="d-block w-100" alt="oly" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="oly (26).jpg" class="d-block w-100" alt="oly" />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="oly (27).jpg" class="d-block w-100" alt="oly" />
+                                </div>
+                                
+                                <div class="carousel-item">
+                                    <video class="d-block w-100" controls>
+                                        <source src="sample-video.mp4" type="video/mp4" />
+                                        Your browser does not support video playback.
+                                    </video>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel1" data-bs-slide="prev" aria-label="Previous">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel1" data-bs-slide="next" aria-label="Next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">International Olympics Day! </h5>
+                            <p class="text-muted">📅 Date: June 23, 2023</p>
+                            <p>Theme: Lets Move!.</p>
+                        </div>
+                    </div>
+                </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 shadow-sm">
+                                <div id="eventCarousel1" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="aero.jpg" class="d-block w-100" alt="odc" />
+                                        </div>
+                                        <div class="carousel-item active">
+                                            <img src="aero (2).jpg" class="d-block w-100" alt="odc" />
+                                        </div>
+                                        <div class="carousel-item active">
+                                            <img src="aero (3).jpg" class="d-block w-100" alt="odc" />
+                                        </div>
+                                        <div class="carousel-item active">
+                                            <img src="aero (4).jpg" class="d-block w-100" alt="odc" />
+                                        </div>
+                                        <div class="carousel-item active">
+                                            <img src="aero (5).jpg" class="d-block w-100" alt="odc" />
+                                        </div>
+                                        <div class="carousel-item active">
+                                            <img src="anti (2).jpg" class="d-block w-100" alt="odc" />
+                                        </div>
+                                        <div class="carousel-item active">
+                                            <img src="anti.jpg" class="d-block w-100" alt="odc" />
+                                        </div>
+                                        <div class="carousel-item active">
+                                            <img src="anti (3).jpg" class="d-block w-100" alt="odc" />
+                                        </div>
+                                        <div class="carousel-item active">
+                                            <img src="anti (4).jpg" class="d-block w-100" alt="odc" />
+                                        </div>
+                                        <div class="carousel-item active">
+                                            <img src="anti (5).jpg" class="d-block w-100" alt="odc" />
+                                        </div>
+                                        <div class="carousel-item active">
+                                            <img src="anti (6).jpg" class="d-block w-100" alt="odc" />
+                                        </div>
+                                        <div class="carousel-item active">
+                                            <img src="bnsc.jpg" class="d-block w-100" alt="odc" />
+                                        </div>
+                                        <div class="carousel-item active">
+                                            <img src="bnsc (2).jpg" class="d-block w-100" alt="odc" />
+                                        </div>
+                                        <div class="carousel-item active">
+                                            <img src="bnsc (3).jpg" class="d-block w-100" alt="odc" />
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel1" data-bs-slide="prev" aria-label="Previous">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel1" data-bs-slide="next" aria-label="Next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Botswana Anti-Doping </h5>
+                                    <p class="text-muted">📅 Date: April 04, 2023</p>
+                                    <p>Building a healthy community through Education sports and culture.</p>
+                                </div>
+                            </div>
+                        </div>
+    </section>
+
+    <!-- Vacancies -->
+    <section id="vacancies" class="mb-5">
+        <h2 class="text-danger">Vacancies</h2>
+        <button id="toggleAdminBtn" class="btn btn-outline-secondary btn-sm">Login as Admin</button>
+        <div class="bg-white p-4 rounded shadow-sm">
+            <div class="vacancy-item mb-3">
+                <h5>Mathematics Teacher</h5>
+                <p>We're looking for a passionate math teacher. Apply before August 15, 2025.</p>
+            </div>
+            <div class="vacancy-item mb-3">
                 <h5>ICT Lab Technician</h5>
                 <p>Support our computer labs and assist students with IT equipment. Apply now.</p>
-                </div>
-                <!-- Admin manually adds more <div class="vacancy-item">...</div> here -->
             </div>
-            </section>
-
         </div>
-        
-        <!--Footer-->
-        <footer class="bg-dark text-white pt-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 mb-3">
-                        <h5>Contact Us</h5>
-                        <p>Email: thamagajss@gmail.com</p>
-                        <p>Tel: +267 5999221/579</p>
-                        <p>Fax: +267 5999267</p>
-                        <p>Private Bag 002, Thamaga</p>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <h5>Address</h5>
-                        <p>Thamaga Junior Secondary School</p>
-                        <p> Plot, Thamaga, Botswana</p>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <h5>Follow Us</h5>
-                        <a href="https://www.facebook.com/profile.php?id=100057305505959&mibextid=ZbWKwL" class="text-white me-3">Facebook</a>
-                    </div>
-                    <div class="text-center py-3 border-top">
-                        <p class="mb-0">© 2025 Thamaga Junior Secondary School| All rights reserved</p>
-                    </div>
-                </div>
+    </section>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white pt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <h5>Contact Us</h5>
+                <p>Email: thamagajss@gmail.com</p>
+                <p>Tel: +267 5999221 / 579</p>
+                <p>Fax: +267 5999267</p>
+                <p>Private Bag 002, Thamaga</p>
             </div>
-        </footer>
+            <div class="col-md-4 mb-3">
+                <h5>Address</h5>
+                <p>Thamaga Junior Secondary School</p>
+                <p>Plot, Thamaga, Botswana</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5>Follow Us</h5>
+                <a href="https://www.facebook.com/profile.php?id=100057305505959&mibextid=ZbWKwL" class="text-white me-3">Facebook</a>
+            </div>
+        </div>
+        <div class="text-center py-3 border-top">
+            <p class="mb-0">© 2025 Thamaga Junior Secondary School | All rights reserved</p>
+        </div>
+    </div>
+</footer>
 
-        <!-- Bootstrap Bundle JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+<!-- Bootstrap Bundle JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
-
-
-
-   
-        
-    
-  
-  

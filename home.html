@@ -1,97 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Thamaga Junior Secondary School</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thamaga Junior Secondary School</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <style>
+        body.home-page .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+            url('images/hero-bg.jpg') center/cover no-repeat;
+            height: 60vh;
+            color: white;
+        }
+        .highlight {
+            color: #2af5ea;
+        }
+    </style>
+</head>
+<body class="home-page">
 
-        <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white boarder-bottom">
-            <div class="container">
-                <a class="navbar-brand fw-bold" href="images.jpeg" THAMAGA JUNIOR SECONDARY SCHOOL>
-                    <img src="images.jpeg" alt="Thamsec Logo" width="40" height="40" class="me-2">
-                    <span class="fw-bold">THAMAGA JUNIOR SECONDARY SCHOOL</span>
-                </a>        
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
-                        <li class="nav-item"><a class="nav-link" href="discover.html">Discover</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                    </ul>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="home.html">
+            <img src="images.jpeg" alt="Thamsec Logo" width="40" height="40" class="me-2" />
+            <span>THAMAGA JUNIOR SECONDARY SCHOOL</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+                <li class="nav-item"><a class="nav-link" href="discover.html">Discover</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero d-flex align-items-center justify-content-center text-center">
+    <div>
+        <h1 class="display-4 fw-bold">THE SECRET OF SUCCESS IS <span class="highlight">EDUCATION</span></h1>
+        <p class="lead">Check out our story</p>
+    </div>
+</section>
+
+<!-- Announcements Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="text-center w-100">📢 Latest Announcements</h2>
+            <button id="adminToggleBtn" class="btn btn-outline-primary btn-sm">Login as Admin</button>
+        </div>
+
+        <!-- Admin Form -->
+        <form id="announcementForm" class="mb-4 d-none">
+            <div class="row g-2">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="announcementText" placeholder="Enter announcement" required />
+                </div>
+                <div class="col-md-3">
+                    <select id="announcementType" class="form-select">
+                        <option value="info">Info</option>
+                        <option value="warning">Warning</option>
+                        <option value="danger">Urgent</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <input type="submit" value="Add Announcement" class="btn btn-success w-100" />
                 </div>
             </div>
-        </nav>
+        </form>
 
-        <!--Hero section-->
-        <section class="hero text-white text-center d-flex align-items-center justify-content-center">
-            <div>
-                <h1 class="display-4 fw-bold">THE SECRET OF SUCCESS IS<span class="highlight"> EDUCATION</span></h1>
-                <p class="lead">Check out our story</p>
+        <!-- Display Announcements -->
+        <div id="announcementContainer"></div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white pt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <h5>Contact Us</h5>
+                <p>Email: thamagajss@gmail.com</p>
+                <p>Tel: +267 5999221/579</p>
+                <p>Fax: +267 5999267</p>
+                <p>Private Bag 002, Thamaga</p>
             </div>
-        </section>
-
-        <!--Announcement Section-->
-        <section class="py-5">
-            <div class="container">
-                <h2 class="text-center mb-4">Latest announcement</h2>
-                <div class="alert alert-info" role="alert">
-                    <strong>📢Announcement:</strong> Mid-term exams will begin on July 7th.
-                </div>
-                <div class="alert alert-warning" role="alert">
-                    <strong>🛑Notice:</strong> The library will be closed on July 10th for maintance. 
-                </div>
-                <!--Admins can add more alerts here manually or via a CMS-->
+            <div class="col-md-4 mb-3">
+                <h5>Address</h5>
+                <p>Thamaga Junior Secondary School</p>
+                <p>Plot, Thamaga, Botswana</p>
             </div>
-        </section>
-
-        <!--Features Section-->
-        <section class="py-5 bg-light">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-md-6 mb-4">
-                        <h3 class="text-primary">OUR SUB-SCHOOLS</h3>
-                        <P> 
-                            <h4>PLUTO <br> SUN <br> JUPITER <br></h4>
-                        </P>
-                        <div class="topstudents"></div>
-                    </div>
-                </div>
+            <div class="col-md-4 mb-3">
+                <h5>Follow Us</h5>
+                <a href="https://www.facebook.com/profile.php?id=100057305505959" class="text-white me-3">Facebook</a>
             </div>
-        </section>
+        </div>
+        <div class="text-center py-3 border-top">
+            <p class="mb-0">© 2025 Thamaga Junior Secondary School | All rights reserved</p>
+        </div>
+    </div>
+</footer>
 
-        <!--Footer-->
-        <footer class="bg-dark text-white pt-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 mb-3">
-                        <h5>Contact Us</h5>
-                        <p>Email: thamagajss@gmail.com</p>
-                        <p>Tel: +267 5999221/579</p>
-                        <p>Fax: +267 5999267</p>
-                        <p>Private Bag 002, Thamaga</p>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <h5>Address</h5>
-                        <p>Thamaga Junior Secondary School</p>
-                        <p> Plot, Thamaga, Botswana</p>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <h5>Follow Us</h5>
-                        <a href="https://www.facebook.com/profile.php?id=100057305505959&mibextid=ZbWKwL" class="text-white me-3">Facebook</a>
-                    </div>
-                    <div class="text-center py-3 border-top">
-                        <p class="mb-0">© 2025 Thamaga Junior Secondary School| All rights reserved</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const announcements = JSON.parse(localStorage.getItem("announcements")) || [
+        { type: "info", text: "Mid-term exams will begin on July 7th." },
+        { type: "warning", text: "Library will be closed on July 10th for maintenance." }
+    ];
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+    const container = document.getElementById("announcementContainer");
+    const form = document.getElementById("announcementForm");
+    const toggleBtn = document.getElementById("adminToggleBtn");
+
+    let isAdmin = false;
+
+    function renderAnnouncements() {
+        container.innerHTML = "";
+        announcements.forEach((a, index) => {
+            const alert = document.createElement("div");
+            alert.className = `alert alert-${a.type} d-flex justify-content-between align-items-center`;
+            alert.role = "alert";
+            alert.innerHTML = `
+          <div><strong>📢</strong> ${a.text}</div>
+          ${isAdmin ? `<button class="btn-close" data-index="${index}"></button>` : ""}
+        `;
+            container.appendChild(alert);
+        });
+
+        if (isAdmin) {
+            document.querySelectorAll(".btn-close").forEach(btn => {
+                btn.addEventListener("click", () => {
+                    announcements.splice(btn.dataset.index, 1);
+                    saveAnnouncements();
+                });
+            });
+        }
+
+        localStorage.setItem("announcements", JSON.stringify(announcements));
+    }
+
+    function saveAnnouncements() {
+        localStorage.setItem("announcements", JSON.stringify(announcements));
+        renderAnnouncements();
+    }
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const text = document.getElementById("announcementText").value.trim();
+        const type = document.getElementById("announcementType").value;
+        if (!text) return;
+
+        announcements.unshift({ text, type });
+        form.reset();
+        saveAnnouncements();
+    });
+
+    toggleBtn.addEventListener("click", () => {
+        if (!isAdmin) {
+            const pass = prompt("Enter admin password:");
+            if (pass !== "123@thamagaJSS") return;
+        }
+        isAdmin = !isAdmin;
+        form.classList.toggle("d-none", !isAdmin);
+        toggleBtn.textContent = isAdmin ? "Logout Admin" : "Login as Admin";
+        renderAnnouncements();
+    });
+
+    renderAnnouncements();
+</script>
+</body>
 </html>
